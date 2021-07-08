@@ -49,5 +49,3 @@ def newt(f, g, x_0, t):
     if math.fabs(x_1 - x_0) > t:
         x_1 = newt(f, g, x_1, t)
     return x_1
-
-print(newt(f, g, 4, 0.00001))
