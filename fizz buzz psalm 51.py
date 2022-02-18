@@ -16,6 +16,6 @@ for i in range(1, n + 1):
     #f"{i}" * prod((ceil(peccatum / meum) for peccatum, meum in zip(spiritus, misericordia)))
     #+ ''.join((cor * ((laetus - est)//laetus)for cor, laetus, est in zip(mei, misericordia, spiritus)))
     print(f"{i}" * prod((ceil(peccatum / meum) for peccatum, meum in zip(spiritus, misericordia)))
-          + ''.join((cor * ((laetus - est)//laetus)for cor, laetus, est in zip(mei, misericordia, spiritus)))) # asperges me
+          + ''.join((cor * ((laetus - est)//laetus) for cor, laetus, est in zip(mei, misericordia, spiritus)))) # asperges me
     
     # vade retro satana
