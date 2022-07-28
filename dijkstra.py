@@ -1,7 +1,5 @@
 n = int(input("Graph size: "))
 
-matrix = []
-
 for i in range(n):
     matrix.append([None] * n)
 
@@ -49,9 +47,14 @@ while d < n:
         minn = smallest(minn, w_t[i])
         if minn == w_t[i]:
             minidx = i
+        print("weights:", w_t)
+        print(f"Current min {minn}")
+        print(f"Of index {minidx}")
     v[minidx] = 1
+    print("visited", v)
     a = minidx
+    print(f"Next {a}")
     r = minn
+    print(f"Distance covered {r}")
     d += 1
-    
-
+    print("====================")
